@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: [ ubuntu-20.04, windows-2019 ]
+        operating-system: [ ubuntu-20.04 ]
         php: [ '7.4' ]
     name: PHP ${{ matrix.php }} sample
     steps:
@@ -17,4 +17,4 @@ jobs:
         uses: nanasess/setup-php@master
         with:
           php-version: ${{ matrix.php }}
-      - run: php my_script.php
+      - run: php index.php
