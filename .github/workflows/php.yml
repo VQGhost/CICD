@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 jobs:
   build:
-    runs-on: ${{ matrix.operating-system }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         operating-system: [ ubuntu-20.04 ]
