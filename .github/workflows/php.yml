@@ -17,4 +17,4 @@ jobs:
         uses: nanasess/setup-php@master
         with:
           php-version: ${{ matrix.php }}
-      - run: cp index.php ~/var/www/html/index.php
+      - run: cp index.php /var/www/html/index.php
