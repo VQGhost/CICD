@@ -13,4 +13,4 @@ jobs:
     name: PHP ${{ matrix.php }} sample
     steps:
       - uses: actions/checkout@master
-      - run: pwd
+      - run: cp index.php  /var/www/html/index.php
